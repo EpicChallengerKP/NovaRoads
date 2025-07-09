@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "LandscapeBlueprintBrush.h"
+#include "LandscapeBlueprintBrushBase.h"
 #include "RoadLandscapeBlueprintBrush.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class NOVAROADS_API ARoadLandscapeBlueprintBrush : public ALandscapeBlueprintBrush
+class NOVAROADS_API ARoadLandscapeBlueprintBrush : public ALandscapeBlueprintBrushBase
 {
 	GENERATED_BODY()
 	
