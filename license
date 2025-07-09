@@ -1,0 +1,37 @@
+NovaRoads License (Non-Commercial, Unreal Engine Only)
+
+Copyright (c) 2025 Kamalpreet Singh Nafray
+
+NovaRoads is licensed for use exclusively within Unreal Engine projects
+under the Unreal Engine End User License Agreement (EULA) provided by Epic Games.
+
+You are free to:
+- Use, modify, and share this plugin for non-commercial Unreal Engine projects.
+- Contribute to the plugin under the same license terms.
+- Fork this repository and experiment for educational or personal Unreal Engine use.
+
+You may NOT:
+- Use this plugin in commercial or for-profit projects without a commercial license.
+- Use or distribute this plugin outside of Unreal Engine.
+- Sell, sublicense, or repackage this plugin as part of any asset pack, toolset, or marketplace offering.
+
+Commercial Licensing:
+- A commercial license will be made available once NovaRoads exits beta.
+- Interested parties may obtain a commercial license for a fee, allowing use in commercial Unreal Engine projects.
+- Contact the author (Kamalpreet Singh Nafray) for pricing and licensing terms after the beta release.
+
+Support Notice:
+- The author **may or may not** be able to provide personal support, bug fixes, or direct help during the beta phase.
+- Full support, documentation, and assistance will be prioritized for users with a commercial license after release.
+
+By contributing to this project, you agree that your contributions are licensed under these same terms.
+
+DISCLAIMER:
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.
+
+---
+
+This plugin is not affiliated with or endorsed by Epic Games. It is intended for Unreal Engine users and projects only.
