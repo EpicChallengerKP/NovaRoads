@@ -6,12 +6,28 @@
 #include "LandscapeBlueprintBrushBase.h"
 #include "RoadLandscapeBlueprintBrush.generated.h"
 
-/**
- * 
- */
-UCLASS()
-class NOVAROADS_API ARoadLandscapeBlueprintBrush : public ALandscapeBlueprintBrushBase
+UCLASS(Blueprintable)
+class NOVAROADS_API ARoadSplineLandscapeBrush : public ALandscapeBlueprintBrushBase
 {
-	GENERATED_BODY()
-	
+    GENERATED_BODY()
+
+public:
+    void Initialize(const FTransform& InLandscapeTransform, const FIntPoint& InLandscapeSize, const FIntPoint& InRenderTargetSize);
+
+    UTextureRenderTarget2D* Render(bool bIsHeightmap, UTextureRenderTarget2D* CombinedResult, const FName& WeightmapLayerName);
+
+    bool IsValidBrush() const { return true; }
+
+    TArray<UObject*> GetBlueprintRenderDependencies() { return {}; }
+
+protected:
+    UPROPERTY(EditAnywhere, Category = "Road Brush")
+    float DeformStrength = 512.0f;
+
+    UPROPERTY(EditAnywhere, Category = "Road Brush")
+    float Radius = 256.0f;
+
+    FTransform LandscapeTransform;
+    FIntPoint LandscapeSize;
+    FIntPoint RenderTargetSize;
 };
