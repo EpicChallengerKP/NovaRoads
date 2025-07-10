@@ -1,74 +1,56 @@
 [![License](https://img.shields.io/badge/license-Beta%20Non--Commercial-yellow)](https://github.com/EpicChallengerKP/NovaRoads?tab=License-1-ov-file) 
 [![Built for UE5](https://img.shields.io/badge/built%20for-UE5-5e5eff)](https://www.unrealengine.com/) <br>
 
-# NovaRoads 🛣️
+# NovaRoads
 
-**NovaRoads** is a plugin for Unreal Engine 5 designed to bring spline-based procedural road generation and dynamic landscape deformation to world-building workflows. It aims to be modular, performance-conscious, and editor-friendly, suitable for both runtime and design-time use.
-
----
-
-## 🌟 Features
-
-- ✅ Procedural road mesh generation using spline components  
-- ✅ Customizable road width, UV scaling, and tangent smoothing  
-- ✅ Auto-mesh updates in editor (OnConstruction)  
-- ✅ Full collision support with `UProceduralMeshComponent`  
-- ✅ UVs scale uniformly along the spline  
-- 🚧 In-development: Landscape deformation brush integration (Landscape Blueprint Brush)  
-- 🚧 Planned support for foliage masking and terrain painting  
+**NovaRoads** is an Unreal Engine 5 plugin focused on procedural road generation using spline components. It integrates closely with the engine's landscape system to allow flexible, editor-friendly road creation workflows with real-time mesh updates and support for terrain deformation via custom landscape brushes.
 
 ---
 
-## 📦 What’s Done
+## Features
 
-- ✅ Basic `ARoadGenerator` actor with procedural spline mesh generation  
-- ✅ Collisions and proper normals for the generated mesh  
-- ✅ UV mapping with uniform scale and direction  
-- ✅ Road appearance adapts to curvature through segment subdivision  
-- ✅ Road tool works entirely within UE5 plugin as a modular actor  
-- ✅ Plugin compiles and functions cleanly in editor  
-- ✅ Early work on `RoadLandscapeBlueprintBrush` for deforming terrain
-
----
-
-## 🔧 In Progress
-
-- 🛠️ `RoadSplineLandscapeBrush`: A custom `ALandscapeBlueprintBrush`-derived actor that reads spline data from `ARoadGenerator` and deforms the landscape accordingly  
-- 🛠️ Runtime-friendly implementation using render targets  
-- 🛠️ Optional falloff, deform strength, and blend settings  
-- 🛠️ Clean API to link spline → terrain deformation → paint → final road
+- Procedural road mesh generation along a spline
+- Customizable width, UV tiling, and curvature-based subdivision
+- Automatically updates road mesh during spline edits (OnConstruction)
+- Supports physics and trace collisions using ProceduralMeshComponent
+- Clean, modular C++ codebase designed for extendability
+- Experimental landscape deformation system using `ALandscapeBlueprintBrush`
 
 ---
 
-## 🔮 Planned Features
+## Completed Work
 
-- 🚀 Runtime support for road placement and terrain carving  
-- 🌿 Foliage masking/removal inside road spline bounds  
-- 🧱 Material layer blending support for auto-painting terrain under roads  
-- 🧭 Lane marking and mesh overlays (optional decal mesh components)  
-- 🌉 Support for bridges and slope-aware road platforms  
-- 🛣️ Road branching and intersection tools  
-- 📤 In-editor export to static meshes or Nanite
+- `ARoadGenerator` actor for spline-based mesh generation
+- Mesh generation with UVs that scale uniformly along the spline
+- Collision setup compatible with both tracing and physics
+- Tangent smoothing and normal consistency
+- Plugin structure with proper module setup and editor support
 
 ---
 
-## 💼 License & Usage
+## In Progress
 
-This plugin is released under a **custom license**. 
-
-- ❌ **Not open for unrestricted commercial use**
-- ✅ You may use NovaRoads freely in non-commercial projects during its beta phase
-- 🛒 **Commercial use will require a paid license** once NovaRoads is out of beta
-- 🧑‍🔧 Support is not guaranteed until after official release and license availability
-
-Please contact the author if you'd like to discuss commercial licensing options during beta.
+- `ARoadSplineLandscapeBrush` to deform terrain under road splines
+- Integration with Landscape Blueprint Brushes and render targets
+- Parameterized falloff radius and deform strength per spline
+- Smooth deformation blending with existing terrain
 
 ---
 
-## 💬 Contact
+## Planned Features
 
-Feel free to open an issue or reach out if you'd like to contribute or have feature suggestions!
+- Runtime support for road placement and terrain carving
+- Automatic landscape painting (material layers under road)
+- Foliage masking/removal in road area
+- Bridge and overpass generation tools
+- Decal and marking support on road surface
+- Road intersection tools and branching support
+- Static mesh export and Nanite-ready options
 
 ---
 
-© 2025 NovaRoads Plugin — Created with 💙 and sleepless nights.
+## Development Status
+
+This plugin is currently in **active development** and may not be feature-complete. While the core road mesh generation is functional, the terrain deformation system is still experimental.
+
+Contributions, suggestions, and feedback are welcome.
