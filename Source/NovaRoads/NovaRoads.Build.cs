@@ -29,9 +29,9 @@ public class NovaRoads : ModuleRules
             "Engine",
             "InputCore",
             "ProceduralMeshComponent", // Needed for your RoadGenerator's mesh generation
-			"Landscape",                // Core Landscape module
-			"Landmass",                 // <--- CRITICAL: Provides ALandscapeBlueprintBrush
-			"Foliage",
+	    "Landscape",                // Core Landscape module
+     	    "Landmass",                 // <--- CRITICAL: Provides ALandscapeBlueprintBrush
+	    "Foliage",
             "RenderCore",
             "RHI",
             "LandscapeEditor",           // Needed for editor-time landscape functions and brushes
@@ -46,8 +46,8 @@ public class NovaRoads : ModuleRules
             "Slate",
             "SlateCore",
             "Landscape",                // Core Landscape module
-			"Landmass",                 // <--- CRITICAL: Provides ALandscapeBlueprintBrush
-			"Foliage",
+	    "Landmass",                 // <--- CRITICAL: Provides ALandscapeBlueprintBrush
+	    "Foliage",
             "RenderCore",
             "RHI",
             "LandscapeEditor",           // Needed for editor-time landscape functions and brushes
